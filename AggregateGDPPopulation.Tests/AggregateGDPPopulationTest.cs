@@ -22,10 +22,6 @@ namespace AggregateGDPPopulation.Tests
             string Actual = await actual;
             string Expected = await expected;
 
-
-            //var Actual = JObject.Parse(File.ReadAllText(@"../../../output.json"));
-            //var Expected = JObject.Parse(File.ReadAllText(@"../../../expected-output.json"));
-
             Assert.Equal(JObject.Parse(Expected), JObject.Parse(Actual));
         }
     }
